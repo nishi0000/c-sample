@@ -192,23 +192,100 @@
 
 //kart.Wan2();
 
-using Sample;
+//using Sample;
 
-Kart[] karts = new Kart[2];
+//Kart[] karts = new Kart[2];
 
-karts[0] = new SkyKart();
-karts[1] = new TurboKart();
+//karts[0] = new SkyKart();
+//karts[1] = new TurboKart();
 
-for(int i = 0; i < karts.Length; i++)
-{
-    karts[i].Horn();
-}
-
-
+//for(int i = 0; i < karts.Length; i++)
+//{
+//    karts[i].Horn();
+//}
 
 
 
+//List<float> weights = new List<float>();
 
+//weights.Add(42.2f);
+//weights.Add(42.5f);
+//weights.Add(44.9f);
+//weights.Add(43.2f);
+//weights.Add(42.7f);
+//weights.Add(41.7f);
+
+//for(int i =0; i < weights.Count; i++)
+//{
+//    Console.WriteLine(weights[i]);
+//}
+
+
+//List<String> names = new List<string>();
+
+//names.Add("test");
+//names.Add("test2");
+//names.Add("test3");
+//names.Add("test4");
+//names.Add("test5");
+
+//for (int i = 0;  i < names.Count; i++)
+//{
+//    Console.WriteLine(names[i]);
+//}
+
+//names.RemoveAt(1);
+
+//for (int i = 0; i < names.Count; i++)
+//{
+//    Console.WriteLine(names[i]);
+//}
+
+//names.Remove("test");
+
+//for (int i = 0;i < names.Count; i++)
+//{
+//    Console.WriteLine(names[i]);
+//}
+
+
+
+//List<float> weights = new List<float>();
+
+//weights.Add(42.2f);
+//weights.Add(42.5f);
+//weights.Add(44.9f);
+//weights.Add(43.2f);
+//weights.Add(42.7f);
+//weights.Add(41.7f);
+
+//weights.Sort();
+
+//for (int i = 1; i <= 3; i++)
+//{
+//    Console.WriteLine(weights[weights.Count - i]);
+//}
+
+//Dictionary <String,float> weights = new Dictionary<String,float>();
+
+//weights.Add("2023/12/10",41.2f);
+//weights.Add("2023/12/11", 42.5f);
+//weights.Add("2023/12/12", 44.9f);
+//weights.Add("2023/12/13", 43.2f);
+//weights.Add("2023/12/14", 43.2f);
+//weights.Add("2023/12/15", 42.7f);
+//weights.Add("2023/12/16", 41.7f);
+
+//Console.WriteLine(weights["2023/12/13"]);
+
+
+Dictionary<String,String> weights = new Dictionary<String, String>();
+
+weights.Add("000-123-4563","山田");
+weights.Add("000-469-2488", "小山田");
+weights.Add("000-312-7721", "山本");
+
+Console.WriteLine(weights["000-123-4563"]);
 
 
 
