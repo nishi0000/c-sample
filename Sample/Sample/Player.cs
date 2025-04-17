@@ -8,8 +8,8 @@ namespace Sample
 {
     internal class Player
     {
-        private string name;
-        private int hp;
+        public string name;
+        public int hp;
 
         public Player(string name,int hp)
         {

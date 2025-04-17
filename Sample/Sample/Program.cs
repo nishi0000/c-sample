@@ -279,14 +279,113 @@
 //Console.WriteLine(weights["2023/12/13"]);
 
 
-Dictionary<String,String> weights = new Dictionary<String, String>();
+//Dictionary<String,String> weights = new Dictionary<String, String>();
 
-weights.Add("000-123-4563","山田");
-weights.Add("000-469-2488", "小山田");
-weights.Add("000-312-7721", "山本");
+//weights.Add("000-123-4563","山田");
+//weights.Add("000-469-2488", "小山田");
+//weights.Add("000-312-7721", "山本");
 
-Console.WriteLine(weights["000-123-4563"]);
+//Console.WriteLine(weights["000-123-4563"]);
+
+//int Add(int n)
+//{
+//    return n + 5;
+//}
+
+//int a = 0;
+
+//Console.WriteLine(Add(a));
+
+//int[] hp = { 420, 120, 600, 0, 1200 };
+//List<int> newHp = new List<int>();
+
+//for (int i = 0; i < hp.Length; i++)
+//{
+//    if(hp[i] > 500)
+//    {
+//        newHp.Add(hp[i]);
+//    }
+//}
+
+//foreach (int i in newHp)
+//{
+//    Console.WriteLine(i);
+//}
 
 
+//int[] hp = { 420, 120, 600, 0, 1200 };
 
+//var newHP = hp.Where(x => x >= 500);
 
+//foreach (int i in newHP)
+//{
+//    Console.WriteLine(i);
+//}
+
+//int[] hp = { 550,420,600,800,220};
+//List<int> newHP = new List<int>();
+
+//for (int i = 0; i < hp.Length; i++)
+//{
+//    int a = hp[i] - 100;
+//    newHP.Add(a);
+//}
+
+//foreach (int a in newHP)
+//{
+//    Console.WriteLine(a);
+//}
+
+//int[] hp = { 550, 420, 600, 800, 220 };
+
+//var newHP = hp.Select(x => x - 100);
+
+//foreach (int a in newHP)
+//{
+//    Console.WriteLine(a);
+//}
+
+//int[] hp = { 550, 0, 600, 0, 220 };
+//int dieEnemy = 0;
+
+//for (int i = 0; i < hp.Length; i++)
+//{
+//    if (hp[i] == 0)
+//    {
+//        dieEnemy ++;
+//    }
+
+//}
+
+//Console.WriteLine(dieEnemy);
+
+//int[] hp = { 550, 0, 600, 0, 220 };
+
+//var count = hp.Where(x => x == 0).Count();
+
+//Console.WriteLine(count);
+
+//int[] nums = { -1, -10, -5, -40, -15 };
+
+//var newNums = nums.Select(x => x + 10);
+
+//newNums = newNums.Where(x => x >= 0);
+
+//foreach (var newNum in newNums)
+//{
+//    Console.WriteLine(newNum);
+//}
+
+using Sample;
+
+List<Player> players = new List<Player>();
+players.Add(new Player("一郎",70));
+players.Add(new Player("太郎", 60));
+players.Add(new Player("次郎", 100));
+
+var sortPlayers = players.OrderBy(n => n.Hp);
+
+foreach (var player in sortPlayers)
+{
+    Console.WriteLine(player.name + player.hp);
+}
