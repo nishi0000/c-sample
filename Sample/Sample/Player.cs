@@ -11,9 +11,13 @@ namespace Sample
         public string name;
         public int hp;
 
-        public Player(string name,int hp)
+        //public Player(string name,int hp)
+        //{
+        //    this.name = name;
+        //    this.hp = hp;
+        //}
+        public Player(int hp)
         {
-            this.name = name;
             this.hp = hp;
         }
 

@@ -376,16 +376,73 @@
 //    Console.WriteLine(newNum);
 //}
 
+//using Sample;
+
+//List<Player> players = new List<Player>();
+//players.Add(new Player("一郎",70));
+//players.Add(new Player("太郎", 60));
+//players.Add(new Player("次郎", 100));
+
+//var sortPlayers = players.OrderBy(n => n.Hp);
+
+//foreach (var player in sortPlayers)
+//{
+//    Console.WriteLine(player.name + player.hp);
+//}
+
+//int num1 = 35;
+//int num2 = num1;
+
+//Console.WriteLine(num2);
+
+//num1 = 0;
+//Console.WriteLine(num2);
+
+//using Sample;
+
+//Player player1 = new Player("たかし",100);
+//Player player2 = new Player("たろう", 200);
+
+//player2 = player1;
+
+//Console.WriteLine(player2.hp);
+
+//player1.hp = 500;
+
+//Console.WriteLine(player2.hp);
+
+
+//using Sample;
+
+//void Recover (Player player)
+//{
+//    player.hp = 100;
+//}
+
+//Player player = new Player (30);
+//Recover (player);
+
+//Console.WriteLine ("HP=" + player.hp);
+
+//using Sample;
+
+//void Recover(ref int hp)
+//{
+//    hp = 100;
+//}
+
+//int hp = 30;
+//Recover(ref hp);
+//Console.WriteLine("HP=" + hp);
+
+
 using Sample;
 
-List<Player> players = new List<Player>();
-players.Add(new Player("一郎",70));
-players.Add(new Player("太郎", 60));
-players.Add(new Player("次郎", 100));
-
-var sortPlayers = players.OrderBy(n => n.Hp);
-
-foreach (var player in sortPlayers)
+void InitHp(out int hp)
 {
-    Console.WriteLine(player.name + player.hp);
+    hp = 30;
 }
+
+int hp = 100;
+InitHp(out hp);
+Console.WriteLine("HP=" + hp);
