@@ -1,0 +1,10 @@
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\bin\Debug\TaxCalc.exe.config
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\bin\Debug\TaxCalc.exe
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\bin\Debug\TaxCalc.pdb
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\obj\Debug\TaxCalc.csproj.AssemblyReference.cache
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\obj\Debug\TaxCalc.Form1.resources
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\obj\Debug\TaxCalc.Properties.Resources.resources
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\obj\Debug\TaxCalc.csproj.GenerateResource.cache
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\obj\Debug\TaxCalc.csproj.CoreCompileInputs.cache
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\obj\Debug\TaxCalc.exe
+C:\Users\rinng\source\repos\TaxCalc\TaxCalc\obj\Debug\TaxCalc.pdb
