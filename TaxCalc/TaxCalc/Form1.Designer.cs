@@ -59,13 +59,14 @@
             this.cakcButton.TabIndex = 2;
             this.cakcButton.Text = "計算する";
             this.cakcButton.UseVisualStyleBackColor = true;
+            this.cakcButton.Click += new System.EventHandler(this.CalcButtonClicked);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(52, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 19);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "税抜価格";
             // 
