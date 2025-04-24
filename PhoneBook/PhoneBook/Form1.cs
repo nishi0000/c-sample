@@ -19,14 +19,26 @@ namespace PhoneBook
             InitializeComponent();
 
             this.phoneBook = new Dictionary<string, string>();
-            this.phoneBook.Add("山田一郎","xxx-3456-4343");
-            this.phoneBook.Add("山田二郎", "xxx-8823-9434");
-            this.phoneBook.Add("山田三郎", "xxx-1693-7364");
-            this.phoneBook.Add("山田四郎", "xxx-7763-2117");
+            ReadFromFile()
+;
 
             foreach(KeyValuePair<string,string> data in phoneBook)
             {
                 this.nameList.Items.Add(data.Key);
+            }
+        }
+
+        private void ReadFromFile()
+        {
+            using (System.IO.StreamReader file = new System.IO.StreamReader(@"..\..\data.txt"))
+            {
+                while (file.EndOfStream)
+                {
+                    string line = file.ReadLine();
+                    string[] data = line.Split(',');
+                    this.phoneBook.Add(data[0], data[1]);
+
+                }
             }
         }
 
